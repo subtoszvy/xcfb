@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Bing</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <link rel="stylesheet" href="index.css">
+      <link rel="shortcut icon" type="image/ico" href="https://www.bing.com/favicon.ico"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div id="header">
+         <img src="nobg.png" alt="Logo">
+      </div>
+      <div id="content">
+         <h1>Formula Proxy</h1>
+         <form id="uv-form">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+            <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
+         </form>
+         <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+         </div>
+         <a href="https://discord.gg/t3DUu9J5Uu" target="_blank" class="fa-brands fa-discord"></a>
+         <a href="https://github.com/subtoszvy/Formula-Proxy" target="_blank"class="fa-brands fa-github"></a>
+         <a href="https://szvycentral.pages.dev" target="_blank"class="fa-solid fa-cloud"></a>
+      </div>
+      <div id="visits">
+          <script type="text/javascript" src="//counter.websiteout.com/js/2/0/20/0"></script>
+      </div>
+      <div id="ad">
+         <!-- AdForGames.com code begin -->
+         <script>var afg={};afg.u=6357;afg.s=4;
+            document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+         </script>
+         <!-- AdForGames.com code end -->
+      </div>
+      <script src="uv/uv.bundle.js" defer></script>
+      <script src="uv/uv.config.js" defer></script>
+      <script src="register-sw.js" defer></script>
+      <script src="search.js" defer></script>
+      <script src="index.js" defer></script>
+      <script src="error.js" defer></script>
+   </body>
+</html>
